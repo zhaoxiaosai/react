@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Document</title>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script type="text/javascript" src="js/browser.min.js"></script>
+
+</head>
+<body>
+	<div id="div1"></div>
+	   <script type="text/babel">
+	   var Com=React.createClass({
+	   render:function(){
+	     return  <p>
+	   	   hello:{this.props.name}
+	   	   年龄:{this.props.age}
+	   </p>
+	   }
+	   })
+	  ReactDOM.render(<Com name="tom" age="19" />,document.getElementById("div1"))
+	   </script>
+</body>
+</html>

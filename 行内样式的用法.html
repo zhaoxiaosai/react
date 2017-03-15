@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Document</title>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script type="text/javascript" src="js/browser.min.js"></script>
+   <style type="text/css">
+   	.special{color:#090;background-color: #f00;}
+   </style>
+</head>
+<body>
+	<div id="div1"></div>
+	   <script type="text/babel">
+	        var names=["tom","susan","javascript"];
+	        var i=1;
+     ReactDOM.render(
+           <div>
+           	{
+           	names.map(function(name){
+           	return <h3 key={i++}>hello:{name}</h3>
+           	})
+           	}
+           </div>,
+      document.getElementById("div1")
+	   	)
+	   </script>
+</body>
+</html>

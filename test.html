@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Document</title>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script type="text/javascript" src="js/browser.min.js"></script>
+
+</head>
+<body>
+	<div id="div1"></div>
+	   <script type="text/babel">
+	    function LoginUser(props){
+	    return <div>
+	    	<label htmlFor="userName">用户名:</label>
+	    	<input type="text" name="" id="userName"/>
+	    </div>
+	    }
+	    function LoginPwd(props){
+	    return <div>
+	    	<label htmlFor="pwd">密码:</label>
+	    	<input type="text" id="pwd"/>
+	    </div>
+	    }
+	    function LoginSub(props){
+	    return <div className="sub">
+	    	 <input type="button" id="btn" value="登陆" /><br/>
+	    	  <a href="reg.html">注册</a>
+	            </div>
+	    }
+	  ReactDOM.render(<div>
+	  	                <LoginUser/>
+	  	                <LoginPwd/>
+	  	                <LoginSub/>
+	                 </div>,document.getElementById("div1"))
+	   </script>
+</body>
+</html>

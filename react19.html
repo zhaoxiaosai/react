@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React.createClass</title>
+  <script type="text/javascript" src="js/react.js"></script>
+  <script type="text/javascript" src="js/react-dom.js"></script>
+  <script type="text/javascript" src="js/browser.min.js"></script>
+</head>
+<body> 
+  <div id="div1"></div>
+      <script type="text/babel">  
+      	//创建父类
+         class Person{
+         	constructor(name,age,sex){
+         		this.name=name;
+         		this.age=age;
+         		this.sex=sex
+         	}
+         	showInfo(){
+         		alert("好好学习")
+         	}
+         };
+         //创建子类
+         class Student extends Person{
+         	constructor(name,age,sex,stu1,stu2){
+         		super(name,age,sex);
+         		this.stu1=stu1;// 自身属性
+         		this.stu2=stu2;  //自身属性
+         	}
+         	study(){
+         		alert("天天向上")
+         	}
+         }
+         var student1=new Student("tom",19,"男","杭州","西湖");
+         alert(student1.name);
+         alert(student1.stu1);
+         student1.showInfo();
+         student1.study();
+         
+         
+      </script>
+</body>
+</html>

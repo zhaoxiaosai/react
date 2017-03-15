@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Document</title>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script type="text/javascript" src="js/browser.min.js"></script>
+   <style type="text/css">
+   	.special{color:#090;background-color: #f00;}
+   </style>
+</head>
+<body>
+	<div id="div1"></div>
+	   <script type="text/babel">
+	       var paraStyle={
+	       fontSize:"35px",
+	       color:"#099",
+	       backgroundColor:"#f00"
+	       }
+	  var p1=<p style={paraStyle}>测试哈巴</p>
+	   	ReactDOM.render(
+            p1,
+      document.getElementById("div1")
+	   	)
+	   </script>
+</body>
+</html>

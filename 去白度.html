@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Document</title>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script type="text/javascript" src="js/browser.min.js"></script>
+   <style type="text/css">
+   	.special{color:#090;background-color: #f00;}
+   </style>
+</head>
+<body>
+	<div id="div1"></div>
+	   <script type="text/babel">
+	  var HelloComponent=React.createClass({
+	  getInitialState:function(){
+	  alert('init');
+	  return {
+	  opacity:1.0,
+	  fontSize:"14px",
+	  color:"#090",
+	  backgroundColor:"#f00"
+	  }
+	  },
+	  render:function(){
+	  alert("render");
+	  return <p style={this.state}>cehsihah</p>
+	  },
+	  componentWillMount:function(){
+	  alert("will");
+	  },
+	  componentDidMount:function(){
+	  alert("did")
+	  }
+	  })
+	  ReactDOM.render(<HelloComponent/>,document.getElementById("div1"))
+	   </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Document</title>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script type="text/javascript" src="js/browser.min.js"></script>
+   <style type="text/css">
+   	.special{color:#090;background-color: #f00;}
+   </style>
+</head>
+<body>
+	<div id="div1"></div>
+	   <script type="text/babel">
+	     class Person{
+	      constructor(name,age,sex){
+                this.name=name;
+                this.age=age;
+                this.sex=sex;
+	          }  
+	      showInfo(){
+	      alert("姓名:"+this.name+"年龄:"+this.age+"性别:"+this.sex)
+	      }
+	     }
+	      var stu1=new Person('tom',"男","10020");
+	      alert(stu1.name);
+	      alert(stu1.age)
+	   </script>
+</body>
+</html>

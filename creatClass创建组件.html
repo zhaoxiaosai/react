@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Document</title>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script type="text/javascript" src="js/browser.min.js"></script>
+
+</head>
+<body>
+	<div id="div1"></div>
+	   <script type="text/babel">
+	   var Com=React.createClass({
+	   propType:{title:React.PropTypes.string.isRequired},
+	   getDefaultProps:function(){
+	   return {
+	   title:"tom"
+	   }
+	   },
+	  render:function(){
+	     return <p>
+	   	   hello:{this.props.title}
+	   </p>
+	   }
+	   })
+	   var data="123";
+	  ReactDOM.render(<Com />,document.getElementById("div1"))
+	   </script>
+</body>
+</html> 
+<!-- //组件类的PropTypes属性,是用来验证组件的属性是否符合要求
+	   //PropTypes 告诉react  这个title属性是必须的而且他的照顾必须是字符串
+	   否则控制台会报错
+ -->
